@@ -300,14 +300,23 @@ footer {
     height: 24px;
   }
   /* hero section */
+  .hero {
+    background: var(--intro-email-bg) url("images/bg-curvy-mobile.svg") center
+      no-repeat;
+    background-size: 14px 10px;
+  }
   .hero h2 {
     width: 302px;
-    height: 225px;
+    margin: 23px;
   }
   .hero p {
     width: 292px;
     font-size: 12px;
     padding: 0 23px;
+  }
+  .hero img {
+    width: 305px;
+    height: 225px;
   }
   .cta {
     width: 242px;
@@ -320,16 +329,24 @@ footer {
     padding: 0 38px;
     margin: 100px 0;
   }
+  /* more description */
   .extra-description {
     flex-direction: column;
     padding: 0 25px;
   }
 
   .image-box img {
-    height: 215px;
+    height: 200px;
     margin: 0px 0px 52px 0px;
   }
-  .testimonial:first-child::before {
+  /* testimonials */
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 150px 22px;
+  }
+
+  testimonial:first-child::before {
     left: 4px;
   }
   /* sign up */
@@ -360,5 +377,14 @@ footer {
       "links"
       "more-links"
       "social-icons";
+  }
+  .social-icons i {
+    font-size: 28px;
+  }
+  .fa-facebook {
+    justify-self: center;
+  }
+  .fa-instagram {
+    justify-self: start;
   }
 }
