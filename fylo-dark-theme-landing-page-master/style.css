@@ -329,4 +329,36 @@ footer {
     height: 215px;
     margin: 0px 0px 52px 0px;
   }
+  .testimonial:first-child::before {
+    left: 4px;
+  }
+  /* sign up */
+  .sign-up {
+    padding: 40px 25px;
+    bottom: -175px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+  input[type="email"],
+  input[type="submit"] {
+    width: 280px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  /* footer */
+  footer {
+    grid-template-columns: 1fr;
+    padding: 280px 27px 42px 27px;
+    column-gap: 0;
+    row-gap: 20px;
+    grid-template-areas:
+      "logo"
+      "location"
+      "contact"
+      "links"
+      "more-links"
+      "social-icons";
+  }
 }
