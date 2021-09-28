@@ -277,4 +277,56 @@ footer {
 .social-icons i {
   font-size: 30px;
 }
-/*  */
+/* mobile version 375px */
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  /* navigation */
+  .nav {
+    padding: 24px 20px;
+  }
+  .nav-items :not(:last-child) {
+    padding-right: 23px;
+  }
+  .brand-logo img {
+    width: 82px;
+    height: 24px;
+  }
+  /* hero section */
+  .hero h2 {
+    width: 302px;
+    height: 225px;
+  }
+  .hero p {
+    width: 292px;
+    font-size: 12px;
+    padding: 0 23px;
+  }
+  .cta {
+    width: 242px;
+    padding: 18px 0;
+  }
+  /* features section*/
+  .features {
+    grid-template-columns: 1fr;
+    gap: 87px 0px;
+    padding: 0 38px;
+    margin: 100px 0;
+  }
+  .extra-description {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  .image-box img {
+    height: 215px;
+    margin: 0px 0px 52px 0px;
+  }
+}
